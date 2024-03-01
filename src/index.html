@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Payment form</title>
+</head>
+<body>
+
+
+<main class="main" id="main">
+  <section class="paymentForm">
+        <form class="paymentForm__form form" enctype="multipart/form-data" id="subscribe" action="/" method="post">
+
+          <label class="paymentForm__label" for="card-number">
+            <span class="visually-hidden">Введите номер карты</span>
+            <input class="paymentForm__input form-numbrs" id="card-number" type="text" placeholder="0000 0000 0000 0000 00" name="maskCard" data-validate="false">
+          </label>
+
+          <label class="paymentForm__label" for="card-date">
+            <span class="visually-hidden">Введите срок действия карты</span>
+            <input class="paymentForm__input form-date" id="card-date" type="text" placeholder="Дата окончания действия карты (ММ/ГГ)" name="maskDate" data-validate="false">
+          </label>
+
+          <label class="paymentForm__label" for="card-cvc">
+            <span class="visually-hidden">Введите 3 цифры на обороте карты</span>
+            <input class="paymentForm__input form-cvc" id="card-cvc" type="text" placeholder="CVC/CVV (3 цифры на обороте карты)" name="maskCvc" data-validate="false">
+          </label>
+
+          <label class="paymentForm__label" for="user-mail">
+            <span class="visually-hidden">Введите E-mail для отправки онлайн-чека</span>
+            <input class="paymentForm__input form-mail" id="user-mail" type="email" placeholder="E-mail для отправки онлайн-чека" name="maskEmail" data-validate="false">
+          </label>
+
+          <button class="paymentForm__btn btn" type="submit" disabled>Оплатить</button>
+        </form>
+  </section>
+</main>
+
+</body>
+</html>
